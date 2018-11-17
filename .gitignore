@@ -17,7 +17,7 @@
 /storage/*
 !/storage/.keep
 # Ignore secrets.yml
-/config/secrets.yml
+/config/master.key
 
 /node_modules
 /yarn-error.log
