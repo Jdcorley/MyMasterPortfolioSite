@@ -1,3 +1,8 @@
+10.times do |topic|
+  Topic.create!(title: "Some Random Topic with Blogs")
+end
+@topics = Topic.all
+
 10.times do |blog|
   Blog.create!(
       title: "My Blog Post #{blog}",
@@ -19,7 +24,8 @@
       and more recently with desktop
       publishing software like Aldus
       PageMaker including versions of
-      Lorem Ipsum."
+      Lorem Ipsum.",
+      topic_id: @topics.sample.id
   )
 end
 
