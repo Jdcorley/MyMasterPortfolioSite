@@ -91,4 +91,4 @@ end
 
 end
 puts "#{Skill.count} skills created."
-puts "#{Portfolio.count} portfolio | created."
+puts "#{Portfolio.count} portfolio created."
