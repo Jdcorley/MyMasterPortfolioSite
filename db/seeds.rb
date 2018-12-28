@@ -2,7 +2,7 @@
   Topic.create!(title: "Some Random Topic with Blogs")
 end
 @topics = Topic.all
-puts "#{Topic.count} topics created."
+
 
 10.times do |blog|
   Blog.create!(
@@ -87,8 +87,14 @@ end
       main_image: "https://via.placeholder.com/600x400",
       thumb_image: "https://via.placeholder.com/350x200"
   )
-  
-
 end
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(name: "Super Advanced Tech")
+end
+
+
+puts "#{Technology.count} technologies created."
+puts "#{Topic.count} topics created."
 puts "#{Skill.count} skills created."
 puts "#{Portfolio.count} portfolio created."
