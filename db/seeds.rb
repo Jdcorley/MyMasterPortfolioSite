@@ -1,3 +1,9 @@
+10.times do |topic|
+  Topic.create!(title: "Some Random Topic with Blogs")
+end
+@topics = Topic.all
+
+
 10.times do |blog|
   Blog.create!(
       title: "My Blog Post #{blog}",
@@ -19,7 +25,8 @@
       and more recently with desktop
       publishing software like Aldus
       PageMaker including versions of
-      Lorem Ipsum."
+      Lorem Ipsum.",
+      topic_id: @topics.sample.id
   )
 end
 
@@ -34,7 +41,7 @@ end
 9.times do |portfolio_item|
   Portfolio.create!(
                title: "Portfolio title: #{portfolio_item}",
-               subtitle: "My great service",
+               subtitle: "Ruby on Rails",
                body: "There are many variations
                of passages of Lorem Ipsum available,
                but the majority have suffered alteration
@@ -56,6 +63,38 @@ end
                main_image: "https://via.placeholder.com/600x400",
                thumb_image: "https://via.placeholder.com/350x200"
   )
+  Portfolio.create!(
+      title: "Portfolio",
+      subtitle: "Angular",
+      body: "There are many variations
+               of passages of Lorem Ipsum available,
+               but the majority have suffered alteration
+               in some form, by injected humour, or
+               randomised words which don't look even
+               slightly believable. If you are going
+               to use a passage of Lorem Ipsum, you
+               need to be sure there isn't anything
+               embarrassing hidden in the middle of text.
+               All the Lorem Ipsum generators on the
+               Internet tend to repeat predefined chunks
+               as necessary, making this the first true
+               generator on the Internet. It uses a dictionary
+               of over 200 Latin words, combined with a handful
+               of model sentence structures, to generate Lorem
+               Ipsum which looks reasonable. The generated Lorem
+               Ipsum is therefore always free from repetition,
+               injected humour, or non-characteristic words etc.",
+      main_image: "https://via.placeholder.com/600x400",
+      thumb_image: "https://via.placeholder.com/350x200"
+  )
 end
-puts "5 skills created."
-puts "9 portfolio | created."
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(name: "Super Advanced Tech")
+end
+
+
+puts "#{Technology.count} technologies created."
+puts "#{Topic.count} topics created."
+puts "#{Skill.count} skills created."
+puts "#{Portfolio.count} portfolio created."
