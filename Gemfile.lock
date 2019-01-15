@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/Jdcorley/corley_view_tool
-  revision: 93e87b6647ee314fb8ae1fb351515d3c4acd50d8
-  specs:
-    corley_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,6 +64,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
+    corley_view_tool (0.1.0)
     crass (1.0.4)
     devise (4.5.0)
       bcrypt (~> 3.0)
@@ -220,7 +215,7 @@ DEPENDENCIES
   bootstrap (~> 4.2.1)
   byebug
   coffee-rails (~> 4.2)
-  corley_view_tool!
+  corley_view_tool (~> 0.1.0)
   devise (~> 4.5)
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
