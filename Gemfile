@@ -53,10 +53,11 @@ end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'webpacker', '~> 3.5'
+gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.5'
-gem 'jquery-rails'
 gem 'bootstrap', '~> 4.2.1'
 
 gem 'corley_view_tool', '~> 0.1.0'
