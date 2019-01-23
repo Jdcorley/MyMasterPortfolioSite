@@ -1,24 +1,7 @@
-# README
+# My Master Portfolio Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built on Rails using three different bootstrap layouts:
+  - A main pages layout.
+  - A blog layout.
+  - A portfolio projects layout.
+  - Portfilio projects are moveable with admin site authorization, allowing for drag and drop and ajax updates to the backend.
