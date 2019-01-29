@@ -203,7 +203,9 @@ body {
   background: image-url('home_background.jpg');
   background-size: cover;
 }
-
+img {
+  padding: 15px;
+}
 .app-footer {
   color: white;
 }
