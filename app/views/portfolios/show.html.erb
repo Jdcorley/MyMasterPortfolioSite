@@ -1,22 +1,16 @@
 <div class='container portfolio-container'>
   <div class='row'>
     <div class='col-md-7'>
-      <%= image_tag @portfolio_item.main_image.to_s, width: '100%' %>
+      <%= image_tag @portfolio_item.featured_image_url, width: '100%' %>
     </div>
 
     <div class='col-md-5'>
       <h1><%= @portfolio_item.title %></h1>
-
       <hr>
-
       <em><%= @portfolio_item.subtitle %></em>
-
       <p><%= @portfolio_item.body %></p>
-
       <hr>
-
       <h3>Technologies Used:</h3>
-
       <% @portfolio_item.technologies.each do |t| %>
         <p><%= t.name %></p>
       <% end %>

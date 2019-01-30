@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
-   @portfolio_items = Portfolio.by_position
+    @portfolio_items = Portfolio.by_position
   end
 
   def sort
@@ -24,6 +24,7 @@ class PortfoliosController < ApplicationController
   end
 
   def create
+    binding.pry
     @portfolio_item = Portfolio.new(portfolio_params)
     respond_to do |format|
       if @portfolio_item.save
@@ -63,8 +64,7 @@ class PortfoliosController < ApplicationController
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
-                                      :main_image,
-                                      :thumb_image,
+                                      :featured_image,
                                       technologies_attributes: [:name]
                                       )
   end
