@@ -19,6 +19,7 @@ Bundler.require(*Rails.groups)
 
 module DevcampPortfolio
   class Application < Rails::Application
+    config.eager_load_paths << "#{Rails.root}/lib"
     config.action_controller.permit_all_parameters = true
     config.load_defaults 5.2
     config.generators.system_tests = nil
