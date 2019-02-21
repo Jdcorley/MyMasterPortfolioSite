@@ -23,5 +23,6 @@ module DevcampPortfolio
     config.action_controller.permit_all_parameters = true
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.action_cable.mount_path = '/websocket'
   end
 end
