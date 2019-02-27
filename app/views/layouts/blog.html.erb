@@ -3,35 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title><%= @page_title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <meta name="keywords" content="<%= @seo_keywords %>"/>
-
+    <%= favicon_link_tag  'favicons/closure.ico'%>
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-
     <%= render 'shared/blog_nav' %>
     <%= render 'shared/blog_masthead' %>
-
-
     <div class="container">
       <div class="row">
-
         <%= yield %>
-
         <%= render 'shared/blog_sidebar' %>
       </div>
-
       <%= render 'shared/blog_footer' %>
-
       <%= alerts %>
-
       <%= source_helper("blog") %>
     </div>
   </body>

@@ -21,6 +21,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'xray-rails'
 end
 gem 'webpacker', '~> 3.5'
 gem 'jquery-rails'
@@ -39,3 +40,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.12'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
 gem 'redis', '~> 4.1'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'

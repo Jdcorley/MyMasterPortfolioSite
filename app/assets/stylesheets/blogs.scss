@@ -1,7 +1,14 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
-
+/*@font-face {
+  font-family: 'Indie Flower', cursive;
+  src:font-url('IndieFlower.ttf');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src:font-url('CrimsonText-Regular.ttf');
+}*/
 /*
  * Globals
  */
@@ -13,7 +20,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Indie Flower', cursive;
   color: #555;
 }
 
@@ -23,7 +30,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Crimson Text', serif;
   font-weight: normal;
   color: #333;
 }
@@ -161,10 +168,7 @@ h6, .h6 {
 .blog-footer {
   margin-top: 20px;
   padding: 2.5rem 0;
-  color: #999;
   text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -189,4 +193,17 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
