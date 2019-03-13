@@ -1,9 +1,13 @@
-<div class="col-sm-8 blog-main">
-
-    <%= paginate @blogs %>
-
-    <%= render @blogs %>
-
-    <%= paginate @blogs %>
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+      <%= paginate @blogs %>
+      <%= render @blogs %>
+      <%= paginate @blogs %>
+    </div>
+    <%= render 'shared/blog_sidebar' %>
+  </div>
+  <%= render 'shared/blog_footer' %>
+  <%= alerts %>
+  <%= source_helper("blog") %>
 </div>

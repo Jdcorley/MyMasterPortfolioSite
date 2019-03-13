@@ -1,5 +1,5 @@
-<div class="col-md-4">
-  <div class="card" data-id="<%= portfolio_item.id %>">
+<div class="grid-item">
+  <div class="container" data-id="<%= portfolio_item.id %>">
     <%= image_tag portfolio_img(portfolio_item.thumb_image_url, 'thumb'), width: '100%'  %>
       <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span><%= portfolio_item.subtitle %>
   </div>

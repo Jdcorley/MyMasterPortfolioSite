@@ -1,27 +1,5 @@
-<div class="collapse bg-dark" id="navbarHeader">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 py-4">
-        <h4 class="text-white">About</h4>
-        <p class="text-muted">Welcome to my portfolio. Take a look around at some of the projects I have worked on. Included are some screenshots, a description of the project as well as the technologies used for the particular project. Feel free to contact me with any questions.</p>
-      </div>
-      <div class="col-sm-4 py-4">
-        <h4 class="text-white">Explore</h4>
-        <ul class="list-unstyled">
-          <%= nav_helper 'text-white','li' %>
-          <li><%= login_helper 'text-white' %></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="navbar navbar-dark bg-dark">
-  <div class="container d-flex justify-content-between">
-    <a href="#" class="navbar-brand">Jack Corley</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</div>
+<ul>
+  <%= nav_helper '', 'li' %>
+  <%= login_helper 'li' %>
+</ul>
 

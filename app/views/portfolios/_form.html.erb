@@ -10,25 +10,21 @@
           <%= f.label :title %>
           <%= f.text_field :title, class: 'form-control' %>
         </div>
-
         <div class="form-group">
           <%= f.label :subtitle %>
           <%= f.text_field :subtitle, class: 'form-control' %>
         </div>
-
         <div class="form-group">
           <label class="btn btn-primary">
             Upload a main image <%= f.file_field :main_image, style: 'display:none;'%>
           </label>
         </div>
-
         <div class="form-group">
           <label class="btn btn-primary">
             Upload thumb image <%= f.file_field :thumb_image, style: 'display:none;'%>
           </label>
         </div>
       </div>
-
       <div class="col-md-6">
         <div class="form-group">
           <%= f.label :body %>
@@ -36,16 +32,13 @@
         </div>
       </div>
   </div>
-
   <hr>
-
   <div class="col-md-12">
     <h2>Technologies Used:</h2>
     <div>
       <%= f.fields_for :technologies do |technology_form| %>
         <%= render 'technology_fields', f: technology_form %>
       <% end %>
-
       <div>
         <%= link_to_add_association 'Add Technology', f, :technologies %>
       </div>
