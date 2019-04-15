@@ -47,6 +47,7 @@ module ApplicationHelper
       }
     ]
   end
+
   def nav_helper style, tag_type
     nav_links = ''
     nav_items.each do |item|
