@@ -1,7 +1,9 @@
-<div class="card-main">
-  <div class="grid-container">
-    <%= source_helper("alert alert-warning") %>
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+<main class="main pt-4" role="main">
+  <%= source_helper("alert alert-warning") %>
+  <div class="container">
+      <div class="row">
+        <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+      </div>
+    </div>
   </div>
-</div>
-
+</main>
