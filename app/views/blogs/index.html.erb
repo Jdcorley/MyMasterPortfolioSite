@@ -1,13 +1,17 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 blog-main">
-      <%= paginate @blogs %>
-      <%= render @blogs %>
-      <%= paginate @blogs %>
+<main class="main pt-4" role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <%= paginate @blogs %>
+        <%= render @blogs %>
+        <%= paginate @blogs %>
+      </div>
+      <div class="col-md-3">
+        <%= render 'shared/blog_sidebar' %>
+      </div>
     </div>
-    <%= render 'shared/blog_sidebar' %>
+    <%= render 'shared/blog_footer' %>
+    <%= alerts %>
+    <%= source_helper("blog") %>
   </div>
-  <%= render 'shared/blog_footer' %>
-  <%= alerts %>
-  <%= source_helper("blog") %>
-</div>
+</main>
