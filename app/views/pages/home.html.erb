@@ -1,14 +1,19 @@
-<div class="card">
+<main class="main pt-4" role="main">
   <div class="container">
-    <div class="container">
-      <h1 class="cover-heading">Welcome</h1>
-      <hr>
-      <p class="lead">In order to fully understand something you must be able to put it into words. In order to ask a
-      question you must first be able to form one. I marvel at the simplicity that lies below layers of abstraction. And I delight in communicating it to others so
-      that they might also admire its eloquent beauty.</p>
-      <p class="lead">
-      <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-primary hm-about" %>
+    <div class="row">
+      <div class="col-md-9">
+        <h1 class="cover-heading">Welcome</h1>
+        <hr>
+        <p class="lead">In order to fully understand something you must be able to put it into words. In order to ask a
+        question you must first be able to form one. I marvel at the simplicity that lies below layers of abstraction. And I delight in communicating it to others so
+        that they might also admire its eloquent beauty.</p>
+        <p class="lead">
+        <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-primary hm-about" %>
       </p>
     </div>
+      <div class="col-md-3">
+        <%= render 'shared/blog_sidebar' %>
+      </div>
   </div>
 </div>
+</main>

@@ -1,10 +1,10 @@
 module ApplicationHelper
   def login_helper(style = '', tag_type)
     if current_user.is_a?(GuestUser)
-      "<#{tag_type}><a href='#{new_user_registration_path}' class='#{style}'>Register</a></#{tag_type}>".html_safe +
-       "<#{tag_type}><a href='#{new_user_session_path}' class='#{style}'>Login</a></#{tag_type}>".html_safe
+      "<#{tag_type} href='#{new_user_registration_path}' class='#{style}'>Register</#{tag_type}>".html_safe +
+       "<#{tag_type} href='#{new_user_session_path}' class='#{style}'>Login</#{tag_type}>".html_safe
     else
-      "<#{tag_type}><a href='#{destroy_user_session_path}' class='#{style}'>Logout</a></#{tag_type}>".html_safe
+      "<#{tag_type} href='#{destroy_user_session_path}' class='#{style}', data-method=\"delete\">Logout</#{tag_type}>".html_safe
     end
   end
 

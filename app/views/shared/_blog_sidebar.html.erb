@@ -1,19 +1,17 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
+<aside class="sidebar sidebar-sticky">
+  <div class="card mb-4">
     <h4>About</h4>
-    <p>Welcome! Thanks for visiting my blog, feel free to comment, ask questions or reach out.</p>
-  </div>
+    <p>Welcome! Thanks for visiting my website, feel free to check out my blog as well, comment, ask questions or reach out.</p>
 
     <%= source_helper("alert alert-info blog-sidebar-source") %>
-
-  <div class="sidebar-module">
+  </div>
+  <div class="card mb-4">
     <h4>Topics</h4>
     <% @side_bar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
     <% end %>
   </div>
-
-  <div class="sidebar-module">
+    <div class="card mb-4">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
       <li><a href="https://github.com/Jdcorley" target="_blank" <%= fa_icon "github" %></a></li>
@@ -21,5 +19,5 @@
       <li><a href="https://medium.com/@jdcorley" target="_blank" <%= fa_icon "medium" %></a></li>
       <li><a href="https://twitter.com/JackCorley12" target="_blank" <%= fa_icon "twitter" %></a></li>
     </ol>
-  </div>
-</div>
+    </div>
+</aside>
