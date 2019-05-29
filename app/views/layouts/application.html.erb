@@ -14,15 +14,17 @@
 
   <body>
     <div class="site-wrapper">
+      <%= render partial: "shared/nav" %>
       <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <%= render partial: "shared/nav" %>
-          <%= yield %>
-          <%= render "shared/application_footer" %>
+        <main class="main pt-4" role="main">
           <%= alerts %>
           <%= source_helper("application") %>
-        </div>
+          <%= yield %>
+        </main>
       </div>
     </div>
+    <footer class="site-footer bg-darkest position-relative">
+      <%= render "shared/application_footer" %>
+    </footer>
   </body>
 </html>
