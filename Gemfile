@@ -30,7 +30,7 @@ gem 'webpacker', '~> 3.5'
 gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
-gem 'devise', '~> 4.5'
+gem 'devise', '~> 4.7'
 gem 'bootstrap', '~> 4.2.1'
 gem 'corley_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
